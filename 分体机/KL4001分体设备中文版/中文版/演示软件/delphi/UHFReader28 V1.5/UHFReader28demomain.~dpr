@@ -1,0 +1,22 @@
+program UHFReader28demomain;
+
+
+
+uses
+  Forms,
+  frmRRU2861demomain in 'frmRRU2861demomain.pas' {frmRRU2861main},
+  RRU2861_Head in 'RRU2861_Head.pas',
+  RRU2861_DLL_Head in 'RRU2861_DLL_Head.pas',
+  fProgressbar in 'fProgressbar.pas' {frmprogress},
+  LoginForm in 'LoginForm.pas' {fLoginForm},
+  DevControl in 'DevControl.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmRRU2861main, frmRRU2861main);
+  Application.CreateForm(Tfrmprogress, frmprogress);
+  Application.CreateForm(TfLoginForm, fLoginForm);
+  Application.Run;
+end.

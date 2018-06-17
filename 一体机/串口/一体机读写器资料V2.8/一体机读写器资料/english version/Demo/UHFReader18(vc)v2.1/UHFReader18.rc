@@ -1,0 +1,300 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UHFReader18.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\UHFReader18.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 UHFReader18"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UHFReader18 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_UHFReader18_DIALOG DIALOGEX 0, 0, 454, 317
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "UHFReader18 Demo V2.1"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "Communication",IDC_STATIC,7,3,83,104
+    LTEXT           "Port:",IDC_STATIC,13,15,20,9
+    COMBOBOX        IDC_COMBO2,35,14,51,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Reader Addr:：",IDC_STATIC,12,34,48,9
+    EDITTEXT        IDC_EDIT1,60,33,25,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Baud：",IDC_STATIC,13,50,29,8
+    COMBOBOX        IDC_COMBO3,43,50,43,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Open COM Port",IDC_BUTTON1,13,67,71,15
+    PUSHBUTTON      "Close COM Port",IDC_BUTTON2,13,86,71,16
+    GROUPBOX        "Reader Information",IDC_STATIC,95,3,352,104
+    LTEXT           "Type:",IDC_STATIC,105,19,24,9
+    EDITTEXT        IDC_EDIT2,145,16,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Version:",IDC_STATIC,203,18,32,9
+    EDITTEXT        IDC_EDIT3,239,16,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Protocl:",IDC_STATIC,311,19,40,9
+    CONTROL         "ISO18000-6B",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,371,10,70,12
+    CONTROL         "EPCC1-G2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,371,22,51,12
+    LTEXT           "Address:",IDC_STATIC,105,40,24,9
+    EDITTEXT        IDC_EDIT4,145,35,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Power:",IDC_STATIC,204,39,24,9
+    EDITTEXT        IDC_EDIT5,239,34,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Max InventoryScanTime:",IDC_STATIC,301,38,88,9
+    EDITTEXT        IDC_EDIT6,389,36,33,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Dminxfre：",IDC_STATIC,105,66,40,9
+    EDITTEXT        IDC_EDIT7,145,63,45,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Dmaxfre：",IDC_STATIC,201,66,41,9
+    EDITTEXT        IDC_EDIT8,259,61,45,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Get Reader Info",IDC_BUTTON3,343,58,80,16
+    LTEXT           "Work Mode:",IDC_STATIC,105,89,40,9
+    COMBOBOX        IDC_COMBO4,145,85,109,106,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON4,260,83,78,16
+    PUSHBUTTON      "Get",IDC_BUTTON5,344,83,78,16
+    GROUPBOX        "Set Reader Parameter",IDC_STATIC,7,111,212,192
+    LTEXT           "Addr(HEX)：",IDC_STATIC,14,129,45,9
+    EDITTEXT        IDC_EDIT9,58,125,45,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Baud：",IDC_STATIC,113,129,32,8
+    COMBOBOX        IDC_COMBO5,147,126,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Power:",IDC_STATIC,14,149,25,8
+    COMBOBOX        IDC_COMBO6,44,145,43,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Max InventoryScanTime:",IDC_STATIC,88,149,92,8
+    COMBOBOX        IDC_COMBO7,179,145,35,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "FreqBaud",IDC_STATIC,12,163,203,94
+    CONTROL         "User Band",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,17,173,60,15
+    CONTROL         "Chinese Band2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    17,187,84,15
+    CONTROL         "US Band",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,17,202,
+                    60,15
+    CONTROL         "Korean Band",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,17,
+                    218,60,15
+    LTEXT           "Dminxfre：",IDC_STATIC,14,266,40,9
+    LTEXT           "Dmaxfre：",IDC_STATIC,111,266,41,9
+    COMBOBOX        IDC_COMBO8,53,263,56,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,153,263,56,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Single Freq",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,283,53,13
+    PUSHBUTTON      "Set",IDC_BUTTON6,130,281,78,16
+    GROUPBOX        "Tag Operation",IDC_STATIC,221,111,227,192
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,228,124,216,
+                    74
+    PUSHBUTTON      "Query",IDC_BUTTON7,227,203,61,16
+    PUSHBUTTON      "Stop",IDC_BUTTON8,303,203,62,16
+    PUSHBUTTON      "Clear",IDC_BUTTON9,378,204,63,16
+    COMBOBOX        IDC_COMBO11,226,223,215,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "StartAddr：",IDC_STATIC,307,245,40,9
+    EDITTEXT        IDC_EDIT10,352,240,21,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "WordNum：",IDC_STATIC,378,245,40,9
+    EDITTEXT        IDC_EDIT11,417,240,20,14,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Password：",IDC_STATIC,352,264,40,9
+    EDITTEXT        IDC_EDIT12,393,259,44,14,ES_AUTOHSCROLL
+    LTEXT           "WriteData：",IDC_STATIC,227,264,36,9
+    EDITTEXT        IDC_EDIT13,264,259,84,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Select：",IDC_STATIC,227,245,40,9
+    COMBOBOX        IDC_COMBO12,266,242,39,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Read Data：",IDC_STATIC,227,286,37,9
+    EDITTEXT        IDC_EDIT14,264,278,84,17,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Read",IDC_BUTTON10,354,279,37,16
+    PUSHBUTTON      "Write",IDC_BUTTON11,401,279,37,16
+    CONTROL         "EU Band",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,17,235,
+                    60,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "UHFReader18 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "UHFReader18\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UHFReader18.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "UHFReader18 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_UHFReader18_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 UHFReader18(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\UHFReader18.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

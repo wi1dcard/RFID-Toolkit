@@ -1,0 +1,26 @@
+unit fProgress;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, ExtCtrls;
+
+type
+  TfrmRRProgress = class(TForm)
+    Panel1: TPanel;
+    ProgressBar1: TProgressBar;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRRProgress: TfrmRRProgress;
+
+implementation
+
+{$R *.dfm}
+
+end.
